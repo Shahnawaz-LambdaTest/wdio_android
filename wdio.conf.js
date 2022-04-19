@@ -25,8 +25,8 @@ exports.config = {
     // should work too though). These services define specific user and key (or access key)
     // values you need to put in here in order to connect to these services.
     //
-    user:'mayankmaurya',
-    key: '4N7wU1Sq7cBGRHCaGf5Y72mTS30xyLV1faGphyvELhuNoTLMRk',
+    user:'',
+    key: '',
     //
     // If you run your tests on Sauce Labs you can specify the region you want to run your tests
     // in via the `region` property. Available short handles for regions are `us` (default), `eu` and `apac`.
@@ -86,7 +86,7 @@ exports.config = {
             "deviceName" : "Google Pixel 6",
             "isRealMobile" : true,
             "platformVersion" : "12",
-        app: 'lt://APP100202491650361112275530'
+        app: 'app_url'
       }],
     //
     // ===================
