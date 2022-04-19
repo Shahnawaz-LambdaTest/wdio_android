@@ -25,8 +25,8 @@ exports.config = {
     // should work too though). These services define specific user and key (or access key)
     // values you need to put in here in order to connect to these services.
     //
-    user:'username',
-    key: 'key',
+    user:'',
+    key: '',
     //
     // If you run your tests on Sauce Labs you can specify the region you want to run your tests
     // in via the `region` property. Available short handles for regions are `us` (default), `eu` and `apac`.
@@ -83,10 +83,10 @@ exports.config = {
         build: 'Webdriverio Android',
         name: 'first_test',
         "platform" : "Android",
-            "deviceName" : "Moto G9 Play",
+            "deviceName" : "Google Pixel 6",
             "isRealMobile" : true,
-            "platformVersion" : "10",
-        app: 'lt://APP10020521645693471010995'
+            "platformVersion" : "12",
+        app: 'lt://APP100202491650361112275530'
       }],
     //
     // ===================
