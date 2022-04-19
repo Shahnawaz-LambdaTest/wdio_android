@@ -25,8 +25,8 @@ exports.config = {
     // should work too though). These services define specific user and key (or access key)
     // values you need to put in here in order to connect to these services.
     //
-    user:'',
-    key: '',
+    user:'mayankmaurya',
+    key: '4N7wU1Sq7cBGRHCaGf5Y72mTS30xyLV1faGphyvELhuNoTLMRk',
     //
     // If you run your tests on Sauce Labs you can specify the region you want to run your tests
     // in via the `region` property. Available short handles for regions are `us` (default), `eu` and `apac`.
@@ -50,7 +50,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './examples/run-parallel-test/specs/single_test.js'
+        './examples/run-test/specs/single_test.js'
     ],
     // Patterns to exclude.
     exclude: [
