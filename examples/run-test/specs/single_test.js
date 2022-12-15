@@ -1,18 +1,43 @@
-var assert = require('assert');
+describe("Proverbial shahnawaz", () => {
+  it("Changes color", async () => {
+    var color = await $("id=color");
+    await color.waitForDisplayed({ timeout: 30000 });
+    await color.click();
+    await color.click();
+  });
 
-describe('Search Wikipedia Functionality', () => {
-  it('can find search results', async () => {
-    var searchSelector = await $(`~Search Wikipedia`);
-    await searchSelector.waitForDisplayed({ timeout: 30000 });
-    await searchSelector.click();
+  it("Changes text", async () => {
+    var text = await $("id=Text");
+    await text.waitForDisplayed({ timeout: 30000 });
+    await text.click();
+  });
 
-    var insertTextSelector = await $('android=new UiSelector().resourceId("org.wikipedia.alpha:id/search_src_text")');
-    await insertTextSelector.waitForDisplayed({ timeout: 30000 });
+  it("Toast", async () => {
+    var toast = await $("id=toast");
+    await toast.waitForDisplayed({ timeout: 30000 });
+    await toast.click();
+  });
 
-    await insertTextSelector.addValue("Lambdatest");
-    await browser.pause(5000);
+  it("Notification", async () => {
+    var nf = await $("id=notification");
+    await nf.waitForDisplayed({ timeout: 30000 });
+    await nf.click();
+  });
 
-    var allProductsName = await $$(`android.widget.TextView`);
-    assert(allProductsName.length > 0);
+  it("Geolocation", async () => {
+    var geo = await $("id=geoLocation");
+    await geo.waitForDisplayed({ timeout: 30000 });
+    await geo.click();
+
+    driver.back();
+  });
+
+  it("SpeedTest", async () => {
+    var st = await $("id=speedTest");
+    await st.waitForDisplayed({ timeout: 30000 });
+    await st.click();
+
+    await browser.pause(10000);
+    driver.back();
   });
 });
